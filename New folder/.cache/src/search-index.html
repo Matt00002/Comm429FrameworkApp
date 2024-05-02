@@ -1,0 +1,15 @@
+---
+permalink: "/search.json"
+---
+[
+  {%- for card in collections.yugioh | reverse %}
+    {%- set url %}{{ card.url | url }}{% endset -%}
+    {
+      "url": "{{ url }}",
+      "title": "{{ card.data.title }}"
+    }
+    {%- if not loop.last -%}
+    ,
+    {%- endif -%}
+  {%- endfor %}
+]

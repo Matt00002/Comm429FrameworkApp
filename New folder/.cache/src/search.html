@@ -1,0 +1,25 @@
+---
+layout: layouts/base.html
+title: Search Page
+---
+<!--
+
+<input type="text" placeholder="Search..">
+
+<ul>
+    {% for card in collections.yugioh %}
+        <li><a href="{{ card.url }}">{{ card.data.title }}</a></li>
+    {% endfor %}
+</ul>
+
+-->
+
+<br>
+<div class="flex flex-col justify-center items-center">
+
+    Search for a card here!: 
+<input type="text" id="search" autocomplete="off" style="border: 1px solid #ccc;" />
+<div id="results"></div>
+<script src="../scripts/search.js" async defer></script>
+
+</div>

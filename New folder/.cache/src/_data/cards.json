@@ -1,0 +1,20 @@
+[
+    {
+        "title": "card 1",
+        "link": "/page2",
+        "linkText": "text",
+        "raised": true
+    },
+    {
+        "title": "card 2",
+        "link": "/page2",
+        "linkText": "something else",
+        "raised": false
+    },
+    {
+        "title": "card 3",
+        "link": "/page2",
+        "linkText": "oohh aaahh",
+        "raised": true
+    }
+]

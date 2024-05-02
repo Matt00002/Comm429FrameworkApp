@@ -1,0 +1,18 @@
+---
+pagination:
+  data: yugiohCards.data
+  size: 1
+  alias: card
+  addAllPagesToCollections: true
+layout: layouts/base.html
+tags: yugioh
+permalink: "yugioh/{{ card.name | slugify }}/"
+eleventyComputed:
+        title: "{{ card.name }}"
+---
+
+<!-- <h1>{{title}}</h1> -->
+
+<!-- {{ topStories | dump }} -->
+
+{% YugiohCard name=card.name, status=card.banlist_info.ban_tcg, image=card.card_images[0].image_url_cropped, effect=card.desc %}
